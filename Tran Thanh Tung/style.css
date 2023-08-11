@@ -1,0 +1,15 @@
+#form{
+    border-radius: 10px;
+    background: wheat;
+    padding: 20px;
+    margin: 0 auto;
+    width: 500px;
+}
+div>label{
+    display: inline-block;
+    min-width: 100px;
+}
+div{
+    margin-top: 10px;
+    margin-left: 100px;
+}
