@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="">
+        <div>
+        <label for="username" class="aaa">Họ tên:</label>
+        <input type="text" id="username" name="username" pattern="/^[a-zA-Z!@#\$%\^\&*\+=._-]{2,}$/g" required>
+    </div>
+    <div>
+        <label for="phone" class="aaa">SĐT:</label>
+        <input type="text" id="phone" name="username" pattern="/(84|0[3|5|7|8|9])+([0-9]{8})\b/g" required>
+    </div>
+    <div>
+        <label for="email" class="aaa">Email:</label>
+        <input type="text" id="email" name="username" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+    </div>
+        <button type="submit" class="buttonsubmit">Submit</button>
+      </form>
+</body>
+
+</html>
