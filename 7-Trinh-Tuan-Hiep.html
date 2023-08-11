@@ -1,39 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <style>
-        .wrap{
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .wrap {
             border: 1px solid black;
             width: 300px;
             margin: 50px auto;
             font-size: 20px;
+            padding: 20px
         }
-        .sub{
+
+        .element {
+            display: inline-block;
+            width: 60px;
+            height: 20px;
+            margin-top: 10px;
+        }
+
+        .sub {
             background-color: #1abc9c;
             cursor: pointer;
+            width: 100px;
+            height: 40px;
+            margin-top: 10px;
         }
-        .sub:hover{
+
+        .sub:hover {
             background-color: #f1c40f;
         }
     </style>
 
 
-    <form class="wrap" action="">
-    <label for="">Ho ten</label>
-   <input type="text"  required></br>
+    <form action="">
+        <div class="wrap">
+            <div>
+                <span class="element">Ho ten</span>
+                <input type="text" pattern="[a-z]" required>
+            </div>
+            <div>
+                <span class="element">SĐT</span>
+                <input type="text" pattern="0[1-9]{9,10}" required>
+            </div>
+            <div>
+                <span class="element">Email</span>
+                <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+            </div>
+            <input class="sub" type="Submit">
 
-   <label for="">SĐT</label>
-   <input type="text" pattern="0[1-9]{9,10}" required></br>
 
-   <label for="">Email</label>
-   <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required></br>
-   
-   <input class="sub" type="Submit">
-</form>
+        </div>
+
+    </form>
 </body>
+
 </html>
