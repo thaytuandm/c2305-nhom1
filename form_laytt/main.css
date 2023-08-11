@@ -1,0 +1,52 @@
+body {
+    background-color: brown;
+}
+
+#textbig{
+    font-size: 70px;
+    color: brown;
+}
+
+#cha{
+    width: 30%;
+    height: 600px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 100px;
+    border: 3px solid brown;
+    border-radius: 10px;
+}
+
+#name{
+    width: 70%;
+    height: 30px;
+    
+}
+
+#phone_number{
+    width: 70%;
+    height: 30px;
+    
+}
+
+#email{
+    width: 70%;
+    height: 30px;
+
+}
+
+#submit{
+    width: 20%;
+    height: 60px;
+    margin: 0 auto;
+    background-color: brown;
+    color: white;
+    margin-top: 20px;
+}
+
+#text{
+    display: flex;
+    align-items: center;
+}
