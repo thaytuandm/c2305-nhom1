@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+         * {
+            padding: 0;
+            margin: 0;
+        }
+        .content {
+            border: 1px solid #333;
+            padding: 30px;
+            width: 300px;
+            margin: 100px;
+            
+        }
+        .content_span {
+            display: inline-block;
+            width: 70px;
+            height: 30px;
+        }
+        .btn {
+            width: 100px;
+            height: 30px;
+            border-radius: 5px;
+            border: 1px solid #333;
+            color: #333;
+        }
+        .btn:hover {
+            cursor: pointer;
+            background-color: rgba(51, 51, 51, 0.558);
+            color: white;
+            box-shadow: rgba(51, 51, 51, 0.558) 0px 5px 15px;
+            transition: 500ms;
+        }
+
+    </style>
+    <form action="">
+        <div class="content">
+            <div class="name">
+                <span class="content_span">Họ và tên</span>
+                <input type="text" pattern="[a-z]{1,15}" required>
+            </div>
+            <div class="phone">
+                <span class="content_span">SĐT</span>
+                <input type="text"  pattern="[0-9]{10}" required>
+            </div>
+            <div class="email">
+                <span class="content_span">Email</span>
+                <input type="text" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
+            </div>
+            <button class="btn">submit</button>
+    </form>
+    
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
