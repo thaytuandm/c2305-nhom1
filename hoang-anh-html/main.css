@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#form {
+    max-width: 500px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: auto;
+    margin-top: 20px;
+}
+
+h3 {
+   margin-left: 30px;
+}
+
+#email a ,
+#numphone a,
+#submit a,
+#username a{
+    text-decoration: none;
+    color: black;
+    margin-left: 30%;
+}
+
+#email ,
+#numphone,
+#submit,
+#username {
+    padding: 10px;
+}
+
+#email input ,
+#numphone input,
+#submit input,
+#username input {
+    margin-left: 25px;
+}
+
+#email a {
+    margin-right: 10px;
+}
+
+
+#submit a {
+    margin-right: 20px;
+}
+
+#submit {
+    margin-left: 50%;
+}
+
+#submit:hover {
+    background-color: tomato;
+    border: none;
+    cursor: pointer;
+}
+

@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form">
+        <h3>Form</h3>
+        <div id="username">
+            <a href="">Họ Tên </a>
+            <input type="text"  required pattern="[A-Za-z ]+" title="Vui lòng nhập họ tên">
+        </div>
+
+        <div id="numphone">
+            <a href="">SDT</a>
+            <input type="text"  required pattern="[0-9]+" title="Vui lòng nhập họ tên">
+        </div>
+
+        <div id="email">
+            <a href="">Email</a>
+            <input type="text"  required>
+        </div>
+
+        <button id="submit" type="submit" >Submit</button>
+    </form>
+
+    <script>
+        const event = document.getElementById("form");
+        event.addEventListener("submit", () => {
+            username = document.getElementById("username").value;
+            password = document.getElementById("password ").value;
+            email = document.getElementById("email").value;
+
+            console.log("username");
+            console.log("password");
+            console.log("email");
+        });
+    </script>
+    
+
+</body>
+</html>
